@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <groups>
+   <define name="1st group">
+  <include name="smoke"></include>
+  <include name="sanity"></include>
+  <include name="Regression"></include>
+     <include name="Rerun"></include>
+   <include name="EndToEnd"></include>
+  </define> 
+   <!--  <define name="2nd group">
+   <include name="Rerun"></include>
+   <include name="EndToEnd"></include>
+     </define> -->
+   <run>
+  
+<include name="1st group"></include>  
+  </run>
+  
+  
+  </groups>
+    <classes>
+      <class name="org.assertHS.AdactinImplementation"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

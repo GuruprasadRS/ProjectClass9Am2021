@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <parameter name="sou" value="GuruprasadTest"></parameter>
+  <parameter name="des" value="GuruprasadGreens"></parameter>
+  <parameter name="checkin" value="07.04.2021"></parameter>
+  <parameter name="checkout" value="08.04.2021"></parameter>
+  <parameter name="First" value="Guru"></parameter>
+  <parameter name="last" value="prasad"></parameter>
+  <parameter name="add" value="chennai"></parameter>
+  <parameter name="cardnum" value="1234567899876543"></parameter>
+    <parameter name="cvv" value="123"></parameter>
+  <classes>
+  <class name="org.taskAdact.AdactinHotelExecutionClass"></class>
+  
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
